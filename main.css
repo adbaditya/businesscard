@@ -1,0 +1,641 @@
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+}
+
+.container-fluid {
+    padding: 0 85px;
+    max-width: 1400px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: #61DDF7B2;
+}
+
+input:-ms-input-placeholder {
+    color: #61DDF7B2;
+}
+
+/* ---------- Scrollbar ----------*/
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #fff #22303C;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #22303C;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #fff;
+}
+
+/* ---------- Fonts ----------*/
+
+/* Nexa Bold Font */
+@import url(//db.onlinewebfonts.com/c/23ab8b9b588d250d12590e755a4d00da?family=Nexa+Bold);
+
+@font-face {
+    font-family: "Nexa Bold";
+    src: url("//db.onlinewebfonts.com/t/23ab8b9b588d250d12590e755a4d00da.eot");
+    src: url("//db.onlinewebfonts.com/t/23ab8b9b588d250d12590e755a4d00da.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/23ab8b9b588d250d12590e755a4d00da.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/23ab8b9b588d250d12590e755a4d00da.woff") format("woff"), url("//db.onlinewebfonts.com/t/23ab8b9b588d250d12590e755a4d00da.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/23ab8b9b588d250d12590e755a4d00da.svg#Nexa Bold") format("svg");
+}
+
+
+/* Gilroy Regular Font */
+@import url(//db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy);
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.eot");
+    src: url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.woff") format("woff"), url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.svg#Gilroy") format("svg");
+}
+
+
+/* Gilroy SemiBold Font */
+@import url(//db.onlinewebfonts.com/c/000833a3a58fb083c44b9de42c2ff0a2?family=Gilroy+SemiBold);
+
+@font-face {
+    font-family: "Gilroy SemiBold";
+    src: url("//db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.eot");
+    src: url("//db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.woff") format("woff"), url("//db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.svg#Gilroy SemiBold") format("svg");
+}
+
+
+/* Gilroy Bold Font */
+@import url(//db.onlinewebfonts.com/c/1064f0ad1cb65fdab43bb592ddd8aa91?family=Gilroy-Bold);
+
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url("//db.onlinewebfonts.com/t/1064f0ad1cb65fdab43bb592ddd8aa91.eot");
+    src: url("//db.onlinewebfonts.com/t/1064f0ad1cb65fdab43bb592ddd8aa91.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1064f0ad1cb65fdab43bb592ddd8aa91.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1064f0ad1cb65fdab43bb592ddd8aa91.woff") format("woff"), url("//db.onlinewebfonts.com/t/1064f0ad1cb65fdab43bb592ddd8aa91.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1064f0ad1cb65fdab43bb592ddd8aa91.svg#Gilroy-Bold") format("svg");
+}
+
+/* Gilroy ExtraBold Font */
+@import url(//db.onlinewebfonts.com/c/00d5a78493aed4b11e2584ad7cceee49?family=Gilroy+ExtraBold);
+
+@font-face {
+    font-family: "Gilroy ExtraBold";
+    src: url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.eot");
+    src: url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.woff") format("woff"), url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.svg#Gilroy ExtraBold") format("svg");
+}
+
+
+
+/* ---------- Navbar CSS ---------*/
+
+nav {
+    height: 50px;
+    margin: 10px 0 0 0;
+}
+
+nav button {
+    color: #fff;
+    font-family: 'Nexa Bold';
+    font-weight: 700;
+    font-size: 18px;
+}
+
+nav a {
+    color: #fff;
+    font-family: 'Nexa Bold';
+    font-weight: 700;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+nav img {
+    height: 47px;
+    width: 47px;
+    vertical-align: middle;
+    margin: 0 3px 0 0;
+}
+
+nav li {
+    margin: 0 5px;
+    font-family: 'Nexa-Bold';
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.header-btn button {
+    border: none;
+    background: none;
+    color: #fff;
+}
+
+button:focus {
+    outline: none;
+}
+
+.login-btn,
+.signup-btn {
+    border: 2px solid #00B4FF;
+    height: 40px;
+    align-self: center;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.login-btn {
+    border: 2px solid #fff;
+}
+
+.login-btn a {
+    padding: 0 10px;
+}
+
+.signup-btn a {
+    padding: 0 15px;
+}
+
+.login-btn:hover {
+    background: #fff;
+    color: #000 !important;
+}
+
+.signup-btn:hover {
+    background: linear-gradient(99.71deg, #3EC6FF 2.82%, #3EC6FF 2.83%, #005FD2 95.93%);
+    border: none;
+    padding: 2px 7px;
+    color: #FFFFFF;
+}
+
+.navbar-brand {
+    position: relative;
+}
+
+/*
+.navbar-collapse li {
+    margin: 10px 0;
+    width: 140px;
+    justify-content: center;
+}
+
+.navbar-collapse ul {
+    background: black;
+    width: 100%;
+    align-items: center;
+}*/
+
+
+/* --- Home Page CSS ---*/
+
+.jumbotron-home {
+    display: flex;
+    align-content: space-between;
+}
+
+.jh-1 {
+    width: 56%;
+}
+
+.jh-2 {
+    width: 44%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.home-page {
+    background-color: #15202B;
+    color: #fff;
+}
+
+.hero-welcome {
+    margin: 70px 0 60px 0;
+    font-size: 1.3em;
+    line-height: 1.4em;
+    font-weight: 700;
+}
+
+#wave-hello {
+    height: 20px;
+    padding-left: 3px;
+    vertical-align: middle;
+}
+
+.hero-welcome span {
+    font-size: 1em;
+    background: -webkit-linear-gradient(130deg, #005FD2 -5.85%, #61DDF7 98.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    padding: 0 0 0 5.5px;
+}
+
+.hero-header {
+    margin: 0 0 10px 0;
+}
+
+.hero-header h1 {
+    line-height: 1.25em;
+    font-weight: 800;
+    font-size: 3.5em;
+    font-family: 'Gilroy-Bold';
+}
+
+.hero-header-tagline {
+    margin: 30px 0 0 0;
+    font-family: 'Gilroy-Bold';
+    font-size: 1.2em;
+    color: #dedede;
+}
+
+.hero-header-buttons {
+    margin: 20px 0 60px 0;
+}
+
+.hero-header-buttons button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    background: #00B4FF;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    margin: 0 10px 0 0;
+}
+
+.hero-quote {
+    border: 1px solid #61DDF7;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #61DDF7;
+    background: #22303C;
+    font-weight: 600;
+    margin: 0 0 80px 0;
+}
+
+.hero-quote span {
+    color: transparent;
+    font-weight: 700;
+    font-size: 1.4em;
+    letter-spacing: .09em;
+    font-style: normal;
+    -webkit-text-stroke: 0.8px #FFE600;    
+}
+
+.hero-illustration {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.hero-illustration img {
+    max-width: 100%;
+    margin: 50px 0 0 0;
+    position: absolute;
+}
+
+.hero-illustration .hero-illustration-nonhover {
+    z-index: 9999;
+    transition: opacity .2s linear;
+    cursor: pointer;
+}
+
+.hero-illustration:hover > .hero-illustration-nonhover {
+    opacity: 0;
+}
+
+/*.hero-illustration img {
+    max-width: 100%;
+    margin: 50px 0 0 0;
+}*/
+
+.code-editor-heading {
+    font-family: "Gilroy-Bold";
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.code-editor {
+    border: 1px solid #61DDF7;
+    border-radius: 10px;
+    padding: 15px 25px;
+    position: relative;
+    margin-left: 12px;
+    background: #22303C;
+    max-width: 97%;
+}
+
+.code-editor p:first-child {
+    background: #fff;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 7px 12px;
+    font-size: .8em;
+    font-weight: 800;
+}
+
+.code-problem {
+    color: black;
+    position: relative;
+}
+
+.code-problem img {
+    color: #000;
+    position: absolute;
+    right: 2.5%;
+    top: 38%;
+    padding: 0 10px 0 0;
+    width: 30px;
+}
+
+.code-answer {
+    margin: 0;
+    padding: ;
+}
+
+.btn {
+    width: 100px;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    font-size: 22px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 600;
+    font-style: bold;
+    font-family: "Nexa Bold", serif;
+    margin-right: 10px;
+}
+
+.btn-run {
+    background-color: #11da19;
+}
+
+.btn-reset {
+    background-color: #00B4FF;
+}
+
+.btn-clear {
+    background-color: #FF5858;
+}
+
+.home-features {
+    margin: 150px 0 150px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-features h2 {
+    font-family: 'Gilroy-Bold', serif;
+    font-size: 3.5em;
+    margin: 0 0 50px 0;
+}
+
+.home-features div {
+    border: 2px solid #61DDF7B2;
+    padding: 20px;
+    width: 30%;
+    border-radius: 20px;
+    background: #22303C;
+}
+
+.home-features div:hover {
+    transform: scale(1.08);
+    -webkit-box-shadow: 0 0 40px rgba(97, 221, 247, 0.2);
+    box-shadow: 0 0 40px rgba(97, 221, 247, 0.2);
+    border: 2px solid #61DDF7;
+}
+
+.home-features img {
+    width: 30px;
+    height: 30px;
+    margin: 0 0 22px 0;
+}
+
+.home-features h6 {
+    font-family: 'Gilroy-Bold', serif;
+    font-size: 1.5em;
+    height: 40px;
+    line-height: 0.9em;
+}
+
+.home-features p {
+    line-height: 1.8em;
+    font-size: 1.2em;
+    color: #dedede;
+}
+
+.home-newsletter {
+    background: #22303C;
+    border: 2px solid #61DDF7B2;
+    border-radius: 12px;
+    height: 380px;
+    margin: 0 0 65px 0;
+}
+
+.home-newsletter p:first-child {
+    font-family: 'Gilroy-Bold', serif;
+    font-size: 3em;
+    padding: 0 15px 0;
+}
+
+.home-newsletter p:nth-child(2) {
+    font-family: 'Gilroy-Bold', serif;
+    font-size: 2em;
+    padding: 0 0 25px 0;
+}
+
+.home-newsletter button {
+    font-size: 1.8em;
+    font-family: 'Gilroy-Bold', serif;
+    color: #fff;
+    background: #22303C;
+    border: 4px solid #00B4FF;
+    border-radius: 7px;
+    padding: 10px 30px;
+}
+
+.home-footer {
+    font-family: 'Gilroy-Bold';
+}
+
+.home-footer p:first-child {
+    padding: 0 0 15px 0;
+}
+
+.home-footer input {
+    width: 600px;
+    padding: 5px 160px 5px 20px;
+    font-size: 25px;
+    border-radius: 10px;
+    border: 2px solid #61DDF7B2;
+    background: #22303C;
+    color: #61DDF7B2;
+    margin: 0 auto;
+}
+
+.home-footer button {
+    padding: 5px 20px;
+    position: absolute;
+    height: 51px;
+    border-radius: 0 10px 10px 0;
+    left: 63%;
+    border: 2px solid #61DDF7B2;
+    background: linear-gradient(120deg, rgba(97, 221, 247, 1.0) 10%, rgba(0, 95, 210, 1.0) 100%);
+    color: #fff;
+    font-size: 25px;
+}
+
+/* ---------- Login Section CSS ----------*/
+
+.login-bg {
+    background: #E0E5E9;
+    padding: 20px;
+}
+
+.login-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 700px;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: ;
+}
+
+.login-section section:first-child {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 400px;
+    background: #3f51b5;
+    color: #fff;
+    border-right: 1px solid #fff;
+    padding: 20px;
+    border-radius: 20px 0 0 20px;
+}
+
+.login-section section:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+}
+
+.login-section a {
+    color: #000;
+}
+
+.login-section h1,
+h4 {
+    line-height: 1.5em;
+    margin: 0 0 30px 0;
+}
+
+
+.login-section hr {
+    border-top: 1px solid #dedede;
+    margin: 40px 0;
+}
+
+.login-google {
+    border: 1px solid #dedede;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    display: block;
+    width: 250px;
+}
+
+.login-google img {
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+}
+
+.login-mobile input {
+    width: 240px;
+    padding: 10px 20px 10px 30px;
+    position: relative;
+    left: -6.5%;
+    border-radius: 5px;
+    border: 1px solid #dedede;
+}
+
+.login-mobile img {
+    z-index: 1;
+    position: relative;
+    vertical-align: middle;
+    left: 2.5%;
+}
+
+.login-mobile div {
+    margin: 0 0 30px 0;
+}
+
+#hide-button {
+    display: none;
+}
+
+.btn-1 {
+    border: 1px solid #dedede;
+    padding: 10px 20px;
+    display: block;
+    width: 255px;
+    color: #fff !important;
+    background: #191718;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+    .login-section section:first-child {
+        display: none;
+    }
+
+    .login-section section:nth-child(2) {
+        border-radius: 20px;
+        max-width: 400px;
+    }
+
+    .login-section {
+        max-width: 400px;
+    }
+
+}
+
+
+/* ---------- Login Section CSS ----------*/
+
+.info-section {
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+    background: violet;
+}
+
+https: //www.youtube.com/watch?v=K245UoICezk
