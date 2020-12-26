@@ -4,11 +4,11 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'Gilroy', serif;
 }
 
 .container-fluid {
-    padding: 0 85px;
+    padding: 0 90px 0 85px;
     max-width: 1400px;
 }
 
@@ -28,21 +28,21 @@ input:-ms-input-placeholder {
 
 /* Works on Firefox */
 * {
-  scrollbar-width: thin;
-  scrollbar-color: #fff #22303C;
+    scrollbar-width: thin;
+    scrollbar-color: #fff #22303C;
 }
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 8px;
+    width: 8px;
 }
 
 *::-webkit-scrollbar-track {
-  background: #22303C;
+    background: #22303C;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #fff;
+    background-color: #fff;
 }
 
 /* ---------- Fonts ----------*/
@@ -56,7 +56,6 @@ input:-ms-input-placeholder {
     src: url("//db.onlinewebfonts.com/t/23ab8b9b588d250d12590e755a4d00da.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/23ab8b9b588d250d12590e755a4d00da.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/23ab8b9b588d250d12590e755a4d00da.woff") format("woff"), url("//db.onlinewebfonts.com/t/23ab8b9b588d250d12590e755a4d00da.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/23ab8b9b588d250d12590e755a4d00da.svg#Nexa Bold") format("svg");
 }
 
-
 /* Gilroy Regular Font */
 @import url(//db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy);
 
@@ -66,7 +65,6 @@ input:-ms-input-placeholder {
     src: url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.woff") format("woff"), url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1dc8ecd8056a5ea7aa7de1db42b5b639.svg#Gilroy") format("svg");
 }
 
-
 /* Gilroy SemiBold Font */
 @import url(//db.onlinewebfonts.com/c/000833a3a58fb083c44b9de42c2ff0a2?family=Gilroy+SemiBold);
 
@@ -75,7 +73,6 @@ input:-ms-input-placeholder {
     src: url("//db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.eot");
     src: url("//db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.woff") format("woff"), url("//db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.svg#Gilroy SemiBold") format("svg");
 }
-
 
 /* Gilroy Bold Font */
 @import url(//db.onlinewebfonts.com/c/1064f0ad1cb65fdab43bb592ddd8aa91?family=Gilroy-Bold);
@@ -95,8 +92,6 @@ input:-ms-input-placeholder {
     src: url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.woff") format("woff"), url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/00d5a78493aed4b11e2584ad7cceee49.svg#Gilroy ExtraBold") format("svg");
 }
 
-
-
 /* ---------- Navbar CSS ---------*/
 
 nav {
@@ -106,34 +101,37 @@ nav {
 
 nav button {
     color: #fff;
-    font-family: 'Nexa Bold';
-    font-weight: 700;
-    font-size: 18px;
+    font-family: 'Nexa Bold', serif;
+    font-weight: 500;
+    font-size: 17px;
 }
 
 nav a {
     color: #fff;
-    font-family: 'Nexa Bold';
-    font-weight: 700;
-    font-size: 18px;
+    font-family: 'Nexa Bold', serif;
+    font-size: 17px;
 }
 
 nav a:hover {
     color: #fff;
 }
 
+.navbar-brand {
+    font-family: 'Nexa Bold', serif;
+    font-size: 22.5px;
+    font-weight: 500;
+}
+
 nav img {
-    height: 47px;
-    width: 47px;
+    height: 46px;
+    width: 46px;
     vertical-align: middle;
-    margin: 0 3px 0 0;
+    margin: 0 5px 0 0;
 }
 
 nav li {
-    margin: 0 5px;
-    font-family: 'Nexa-Bold';
-    font-weight: 700;
-    font-size: 18px;
+    margin: 0 12px 0 0;
+    font-family: 'Nexa-Bold', serif;
     display: flex;
     align-items: center;
 }
@@ -151,14 +149,17 @@ button:focus {
 .login-btn,
 .signup-btn {
     border: 2px solid #00B4FF;
+    border-radius: 3px;
     height: 40px;
     align-self: center;
     padding: 0 5px;
     cursor: pointer;
+    margin: 0 4px 0 0;
 }
 
 .login-btn {
     border: 2px solid #fff;
+    margin: 0 18px 0 2px;
 }
 
 .login-btn a {
@@ -166,7 +167,7 @@ button:focus {
 }
 
 .signup-btn a {
-    padding: 0 15px;
+    padding: 0 10px;
 }
 
 .login-btn:hover {
@@ -185,20 +186,6 @@ button:focus {
     position: relative;
 }
 
-/*
-.navbar-collapse li {
-    margin: 10px 0;
-    width: 140px;
-    justify-content: center;
-}
-
-.navbar-collapse ul {
-    background: black;
-    width: 100%;
-    align-items: center;
-}*/
-
-
 /* --- Home Page CSS ---*/
 
 .jumbotron-home {
@@ -207,13 +194,15 @@ button:focus {
 }
 
 .jh-1 {
-    width: 56%;
+    width: 52%;
+    padding: 0 0 0 12px;
 }
 
 .jh-2 {
-    width: 44%;
+    width: 48%;
     margin: 0 auto;
     z-index: 1;
+    padding: 0 0 0 0;
 }
 
 .home-page {
@@ -222,16 +211,18 @@ button:focus {
 }
 
 .hero-welcome {
-    margin: 70px 0 60px 0;
-    font-size: 1.3em;
-    line-height: 1.4em;
-    font-weight: 700;
+    margin: 85px 0 75px 0;
+    font-size: 1.4em;
+    line-height: 1.1em;
+    font-weight: 500;
+    font-family: 'Gilroy-Bold', serif;
 }
 
 #wave-hello {
-    height: 20px;
+    height: 25px;
     padding-left: 3px;
     vertical-align: middle;
+    margin: 0 0 5px 0;
 }
 
 .hero-welcome span {
@@ -239,8 +230,7 @@ button:focus {
     background: -webkit-linear-gradient(130deg, #005FD2 -5.85%, #61DDF7 98.69%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    position: absolute;
-    padding: 0 0 0 5.5px;
+    padding: 5px 2px;
 }
 
 .hero-header {
@@ -248,68 +238,89 @@ button:focus {
 }
 
 .hero-header h1 {
-    line-height: 1.25em;
+    line-height: 1.35em;
     font-weight: 800;
-    font-size: 3.5em;
-    font-family: 'Gilroy-Bold';
+    font-size: 3.7em;
+    letter-spacing: 2px;
+    font-family: 'Gilroy-Bold', serif;
 }
 
 .hero-header-tagline {
-    margin: 30px 0 0 0;
-    font-family: 'Gilroy-Bold';
+    margin: 18px 0 0 0;
+    font-family: 'Gilroy-Bold', serif;
     font-size: 1.2em;
-    color: #dedede;
+    color: rgb(255, 255, 255, 0.7);
 }
 
 .hero-header-buttons {
-    margin: 20px 0 60px 0;
+    margin: 30px 0 70px 0;
+    display: flex;
 }
 
 .hero-header-buttons button {
-    padding: 10px 20px;
-    font-size: 1.2em;
+    height: 48px;
+    width: 130px;
+    padding: 10px;
+    font-size: 1.25em;
     border-radius: 8px;
     background: #00B4FF;
     color: #fff;
     border: none;
     font-weight: 600;
-    margin: 0 10px 0 0;
+    margin: 0 15px 0 0;
+}
+
+.hero-header-buttons button:nth-child(2) {
+    background: transparent;
+    border: 2px solid #61DDF7B2;
+    font-size: 1em;
 }
 
 .hero-quote {
-    border: 1px solid #61DDF7;
+    width: 103%;
+    min-height: 10vh;
+    border: 2px solid rgba(97, 221, 247, 0.7);
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 15px 30px;
     color: #61DDF7;
     background: #22303C;
+    font-size: 1.2em;
     font-weight: 600;
-    margin: 0 0 80px 0;
+    margin: 0 0 120px 0;
 }
 
-.hero-quote span {
+.hero-quote p {
+    margin-bottom: 0;
+}
+
+.hero-quote p:nth-child(2) {
     color: transparent;
     font-weight: 700;
-    font-size: 1.4em;
-    letter-spacing: .09em;
+    font-size: 1.3em;
+    letter-spacing: 0.15;
     font-style: normal;
-    -webkit-text-stroke: 0.8px #FFE600;    
+    -webkit-text-stroke: 1px rgba(255, 230, 0, 1);
+    position: relative;
+    top: 5px;
 }
 
 .hero-illustration {
     position: relative;
     margin: 0 auto;
-    width: 100%;
+    width: 92%;
     height: auto;
+    left: .5%;
 }
 
 .hero-illustration img {
     max-width: 100%;
     margin: 50px 0 0 0;
     position: absolute;
+    left: .5%;
 }
 
 .hero-illustration .hero-illustration-nonhover {
-    z-index: 9999;
+    z-index: 1;
     transition: opacity .2s linear;
     cursor: pointer;
 }
@@ -318,19 +329,14 @@ button:focus {
     opacity: 0;
 }
 
-/*.hero-illustration img {
-    max-width: 100%;
-    margin: 50px 0 0 0;
-}*/
-
 .code-editor-heading {
-    font-family: "Gilroy-Bold";
-    font-size: 3em;
+    font-family: 'Gilroy-Bold', serif;
+    font-size: 3.5em;
     margin-bottom: 15px;
 }
 
 .code-editor {
-    border: 1px solid #61DDF7;
+    border: 2px solid rgba(97, 221, 247, 0.7);
     border-radius: 10px;
     padding: 15px 25px;
     position: relative;
@@ -354,6 +360,10 @@ button:focus {
     position: relative;
 }
 
+.code-problem p {
+    padding: 0 0 5px 0;
+}
+
 .code-problem img {
     color: #000;
     position: absolute;
@@ -366,6 +376,11 @@ button:focus {
 .code-answer {
     margin: 0;
     padding: ;
+}
+
+.code-answer h2 {
+    font-size: 1.3em;
+    font-weight: 600;
 }
 
 .btn {
@@ -383,6 +398,10 @@ button:focus {
     font-style: bold;
     font-family: "Nexa Bold", serif;
     margin-right: 10px;
+}
+
+.btn:hover {
+    color: #fff;
 }
 
 .btn-run {
@@ -405,13 +424,13 @@ button:focus {
 
 .home-features h2 {
     font-family: 'Gilroy-Bold', serif;
-    font-size: 3.5em;
+    font-size: 4.2em;
     margin: 0 0 50px 0;
 }
 
 .home-features div {
-    border: 2px solid #61DDF7B2;
-    padding: 20px;
+    border: 2px solid rgba(97, 221, 247, 0.7);
+    padding: 20px 40px;
     width: 30%;
     border-radius: 20px;
     background: #22303C;
@@ -425,27 +444,27 @@ button:focus {
 }
 
 .home-features img {
-    width: 30px;
-    height: 30px;
+    width: 38px;
+    height: 38px;
     margin: 0 0 22px 0;
 }
 
 .home-features h6 {
     font-family: 'Gilroy-Bold', serif;
-    font-size: 1.5em;
+    font-size: 1.8em;
     height: 40px;
     line-height: 0.9em;
 }
 
 .home-features p {
     line-height: 1.8em;
-    font-size: 1.2em;
-    color: #dedede;
+    font-size: 1.3em;
+    color: rgb(255, 255, 255, 0.7);
 }
 
 .home-newsletter {
     background: #22303C;
-    border: 2px solid #61DDF7B2;
+    border: 2px solid rgba(97, 221, 247, 0.7);
     border-radius: 12px;
     height: 380px;
     margin: 0 0 65px 0;
@@ -473,35 +492,60 @@ button:focus {
     padding: 10px 30px;
 }
 
+.home-newsletter button:hover {
+    background: linear-gradient(120deg, rgba(97, 221, 247, 1.0) 10%, rgba(0, 95, 210, 1.0) 100%);
+    border: none;
+    padding: 14px 34px;
+}
+
+.home-newsletter span img {
+    height: 0.8em;
+    margin: 0 5px 3.5px 0;
+}
+
 .home-footer {
-    font-family: 'Gilroy-Bold';
+    font-family: 'Gilroy-Bold', serif;
 }
 
 .home-footer p:first-child {
     padding: 0 0 15px 0;
 }
 
+.home-footer p:nth-child(3) {
+    color: rgb(255, 255, 255, 0.7);
+    font-size: 1em;
+    margin: 0 0 20px 0;
+}
+
+.home-footer span {
+    color: #fff;
+}
+
+.home-footer div {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
 .home-footer input {
-    width: 600px;
-    padding: 5px 160px 5px 20px;
+    width: 500px;
+    padding: 5px 20px;
     font-size: 25px;
-    border-radius: 10px;
-    border: 2px solid #61DDF7B2;
+    border-radius: 10px 0 0 10px;
+    border: 2px solid rgb(97, 221, 247, 0.7);
     background: #22303C;
-    color: #61DDF7B2;
-    margin: 0 auto;
+    color: rgb(97, 221, 247, 0.7);
+    border-right: none;
 }
 
 .home-footer button {
     padding: 5px 20px;
-    position: absolute;
-    height: 51px;
     border-radius: 0 10px 10px 0;
-    left: 63%;
     border: 2px solid #61DDF7B2;
     background: linear-gradient(120deg, rgba(97, 221, 247, 1.0) 10%, rgba(0, 95, 210, 1.0) 100%);
     color: #fff;
     font-size: 25px;
+    border-left: none;
 }
 
 /* ---------- Login Section CSS ----------*/
@@ -557,7 +601,6 @@ h4 {
     margin: 0 0 30px 0;
 }
 
-
 .login-section hr {
     border-top: 1px solid #dedede;
     margin: 40px 0;
@@ -612,6 +655,52 @@ h4 {
     border-radius: 5px;
 }
 
+.info-section {
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+    background: violet;
+}
+
+/* ---------- Media Queries ----------*/
+
+@media only screen and (max-width: 991px) {
+    .btn {
+        margin: 0 10px 10px 0;
+    }
+
+    .home-features div {
+        padding: 10px;
+    }
+
+    .home-features h6 {
+        font-size: 1.4em;
+    }
+
+    .home-features p {
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+
+    .home-features img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .navbar-collapse li {
+        margin: 10px 0;
+        width: 140px;
+        justify-content: center;
+    }
+
+    .navbar-collapse ul {
+        background: #22303C;
+        align-items: center;
+        z-index: 2;
+        padding: 10px 50px;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .login-section section:first-child {
         display: none;
@@ -625,17 +714,4 @@ h4 {
     .login-section {
         max-width: 400px;
     }
-
 }
-
-
-/* ---------- Login Section CSS ----------*/
-
-.info-section {
-    max-width: 800px;
-    height: auto;
-    margin: 0 auto;
-    background: violet;
-}
-
-https: //www.youtube.com/watch?v=K245UoICezk
