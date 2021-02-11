@@ -1,1 +1,1 @@
-# A digital business card with your socail links
+# A digital business card with your social links
